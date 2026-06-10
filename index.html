@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GAMEHUB - Colección de juegos retro gratuitos: Memory, Slide Puzzle, Terminus, Pong y Torres de Hanoi.">
     <title>GAMEHUB</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230a0a0a'/><rect x='5' y='5' width='90' height='90' rx='12' fill='none' stroke='%2300f0ff' stroke-width='3'/><rect x='25' y='35' width='8' height='30' rx='2' fill='%2300f0ff'/><rect x='40' y='50' width='20' height='8' rx='2' fill='%2300f0ff'/><circle cx='72' cy='40' r='5' fill='%2300f0ff'/><circle cx='72' cy='55' r='5' fill='%2300f0ff'/></svg>" type="image/svg+xml">
     <style>
@@ -23,6 +24,14 @@
             padding: 2rem 1rem;
         }
 
+        main {
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         h1 {
             font-size: 2.5rem;
             color: #00f0ff;
@@ -33,7 +42,7 @@
         }
 
         .subtitle {
-            color: #666;
+            color: #999;
             font-size: 0.9rem;
             margin-bottom: 3rem;
             letter-spacing: 0.15em;
@@ -71,7 +80,7 @@
         }
 
         .card p {
-            color: #999;
+            color: #b0b0b0;
             font-size: 0.85rem;
             line-height: 1.5;
             flex-grow: 1;
@@ -99,47 +108,49 @@
 
         footer {
             margin-top: 4rem;
-            color: #333;
+            color: #737373;
             font-size: 0.75rem;
             letter-spacing: 0.1em;
         }
     </style>
 </head>
 <body>
-    <h1>GAMEHUB</h1>
-    <p class="subtitle">retro games collection</p>
+    <main>
+        <h1>GAMEHUB</h1>
+        <p class="subtitle">retro games collection</p>
 
-    <div class="grid">
-        <div class="card">
-            <h2>Memory</h2>
-            <p>Juego de emparejar cartas con imágenes pixel-art. Pon a prueba tu memoria con 9 parejas.</p>
-            <a href="web-game-memory/index.html">Jugar</a>
-        </div>
+        <div class="grid">
+            <div class="card">
+                <h2>Memory</h2>
+                <p>Juego de emparejar cartas con imágenes pixel-art. Pon a prueba tu memoria con 9 parejas.</p>
+                <a href="web-game-memory/index.html">Jugar</a>
+            </div>
 
-        <div class="card">
-            <h2>Slide Puzzle</h2>
-            <p>Rompecabezas deslizante con múltiples imágenes y niveles de dificultad (3x3 y 4x4).</p>
-            <a href="web-game-slidepuzzle/index.html">Jugar</a>
-        </div>
+            <div class="card">
+                <h2>Slide Puzzle</h2>
+                <p>Rompecabezas deslizante con múltiples imágenes y niveles de dificultad (3x3 y 4x4).</p>
+                <a href="web-game-slidepuzzle/index.html">Jugar</a>
+            </div>
 
-        <div class="card">
-            <h2>TERMINUS</h2>
-            <p>Shooter espacial con estética de terminal retro. Esquiva asteroides y enemigos en oleadas.</p>
-            <a href="web-game-terminus-ia/index.html">Jugar</a>
-        </div>
+            <div class="card">
+                <h2>TERMINUS</h2>
+                <p>Shooter espacial con estética de terminal retro. Esquiva asteroides y enemigos en oleadas.</p>
+                <a href="web-game-terminus-ia/index.html">Jugar</a>
+            </div>
 
-        <div class="card">
-            <h2>Pong</h2>
-            <p>El clásico Pong contra la IA. Controla la paleta con W/S y supera al oponente.</p>
-            <a href="web-game-pong/index.html">Jugar</a>
-        </div>
+            <div class="card">
+                <h2>Pong</h2>
+                <p>El clásico Pong contra la IA. Controla la paleta con W/S y supera al oponente.</p>
+                <a href="web-game-pong/index.html">Jugar</a>
+            </div>
 
-        <div class="card">
-            <h2>Torres de Hanoi</h2>
-            <p>Puzzle interactivo. Mueve los discos entre las torres siguiendo las reglas.</p>
-            <a href="web-game-hanoi/index.html">Jugar</a>
+            <div class="card">
+                <h2>Torres de Hanoi</h2>
+                <p>Puzzle interactivo. Mueve los discos entre las torres siguiendo las reglas.</p>
+                <a href="web-game-hanoi/index.html">Jugar</a>
+            </div>
         </div>
-    </div>
+    </main>
 
     <footer>GAMEHUB &copy; 2026</footer>
 </body>
